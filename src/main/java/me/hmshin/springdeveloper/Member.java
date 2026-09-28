@@ -6,7 +6,7 @@ import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 
-@NoArgsConstructor(access = AccessLevel.PROTECTED)
+@NoArgsConstructor
 @AllArgsConstructor
 @Getter
 @Entity
@@ -17,5 +17,6 @@ public class Member {
     private Long id;
     @Column(nullable = false)
     private String name;
+    private String email;
 
 }
