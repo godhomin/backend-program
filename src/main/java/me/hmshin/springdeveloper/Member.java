@@ -18,5 +18,8 @@ public class Member {
     @Column(nullable = false)
     private String name;
     private String email;
+    public Member(String name){
+        this.name = name;
+    }
 
 }
